@@ -10,9 +10,11 @@ $color: #6e6;
 $color2: #0f0;
 $linkcolor: #a3f;
 $bgcolor: black;
+$bordercolor: #515;
 
-$bgcolor2: #222;
-$bgcolor3: #333;
+$bgcolor1: #010001;
+$bgcolor2: #050505;
+$bgcolor3: #190919;
 
 $hover: #ddd;
 $darkcolor: #8a8;
@@ -31,8 +33,29 @@ $greyfill2: #1a001a;
     color: $color;
   }
 
+  .popup {
+    color: $color;
+    background-color: $bgcolor;
+    border: 10px solid $bordercolor;
+  }
+
+  .no-button, .small-title-popup-title, .url, .ember-text-area, .ember-view, #status-images, .display {
+    color: $color;
+    background-color: $bgcolor;
+  }
+
+  .form-pair, .text-area, .select, .x-select {
+    color: $color;
+    background-color: $bgcolor2;
+  }
+
   #main, .main, .loading-page, .wrapper, .wrappermain {
     background-color: $bgcolor;
+  }
+
+  .log-header {
+    color: $hover;
+    background-color: $bgcolor2;
   }
 
   .log-header a:hover {
@@ -104,8 +127,13 @@ $greyfill2: #1a001a;
 
   .log-body pre {
     color: $color;
+    background-color: $bgcolor1;
   }
 
+  .log-body .fold:not(.open) p:first-of-type {
+    color: $color2;
+    background-color: $bgcolor3;
+  }
 
   .top {
     position: relative;

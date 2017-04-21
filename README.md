@@ -1,14 +1,13 @@
-# SchwarzenSlacker
+# Dark Travis-CI Theme
 
 [![Build
-Status](https://travis-ci.org/joshuacox/SchwarzenSlacker.svg?branch=master)](https://travis-ci.org/joshuacox/SchwarzenSlacker)
+Status](https://travis-ci.org/joshuacox/dark-travis-ci.svg?branch=master)](https://travis-ci.org/joshuacox/dark-travis-ci)
 
-Literally "Blacken the slack"
 
 ## Quickstart
 
 Merely go
-[here](https://userstyles.org/styles/141526/schwarzenslacker)
+[here](https://userstyles.org/styles/141598)
 and install using stylish, if you want to create your own read on...
 
 ## Usage
@@ -16,10 +15,10 @@ and install using stylish, if you want to create your own read on...
 #### Manually
 
 ```
-sass schwarzenslacker.scss schwarzenslacker.css
+sass travis-dark.scss travis-dark.css
 ```
 
-Then copy the resulting schwarzenslacker.css into stylish and associate with your
+Then copy the resulting travis-dark.css into stylish and associate with your
 selected slack domain.
 
 #### Makefile
@@ -28,9 +27,9 @@ selected slack domain.
 make
 ```
 
-Using the make method will automatically copy the resulting schwarzenslacker.css to
+Using the make method will automatically copy the resulting travis-dark.css to
 your clipboard (assuming you are in X).  Then just paste into stylish
 
 #### Installation
 
-You can just copy the contents of schwarzenslacker.css into a stylish document.
+You can just copy the contents of travis-dark.css into a stylish document.
