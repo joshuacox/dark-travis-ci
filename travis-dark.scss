@@ -76,6 +76,31 @@ $greyfill2: #1a001a;
     background-color: $bgcolor2;
   }
 
+  .profile-getstarted, .profile-repo:hover, .sidebar-list ul {
+    color: $color2;
+    background-color: $bgcolor;
+  }
+
+  .switch .switch-inner span {
+    color: $color2;
+    background-color: $grey6;
+  }
+
+  .profile-orgs h1 {
+    color: $color2;
+    background-color: $bgcolor;
+    border: 0 0 0 2px solid $grey4;
+  }
+
+  .switch .switch-inner {
+    color: $color2;
+    background-color: $grey4;
+  }
+
+  .switch.active .switch-inner {
+    color: $color2;
+    background-color: $grey4;
+  }
 
   .log-body pre {
     color: $color;
@@ -141,6 +166,10 @@ $greyfill2: #1a001a;
 
   .tile.booting, .tile.created, .tile.queued, .tile.received, .tile.started {
     background: linear-gradient(to right, $started 0, $started 8px, $bgcolor3 8px, $bgcolor3 100%) no-repeat;
+  }
+
+  .tile {
+    background: linear-gradient(to right, $passed 0, $passed 8px, $bgcolor3 8px, $bgcolor3 100%) no-repeat;
   }
 
   .tile.passed {
