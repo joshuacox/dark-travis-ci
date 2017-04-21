@@ -1,0 +1,202 @@
+//
+// Set theme colors
+//
+
+$started: #edde3f;
+$passed: #39aa56;
+$failed: #db4545;
+
+$color: #6e6;
+$color2: #0f0;
+$linkcolor: #a3f;
+$bgcolor: black;
+
+$bgcolor2: #222;
+$bgcolor3: #333;
+
+$hover: #ddd;
+$darkcolor: #8a8;
+$shadow: #111;
+$greyd: #9d3d9d;
+$grey9: #c3c;
+$grey6: #717;
+$grey4: #414;
+$greyfill: #1e001e;
+$greyfill2: #1a001a;
+
+@-moz-document domain("travis-ci.org") {
+  a, body, button, html,
+  .topbar, .topbar a,
+  .repo-header .repo-title a {
+    color: $color;
+  }
+
+  #main, .main, .loading-page, .wrapper, .wrappermain {
+    background-color: $bgcolor;
+  }
+
+  .log-header a:hover {
+    color: $hover;
+    background-color: $bgcolor3;
+  }
+
+  .fold {
+    color: $color;
+    background-color: $bgcolor3;
+  }
+
+  .fold-name {
+    color: $color2;
+    background-color: $bgcolor;
+  }
+
+  .duration {
+    color: $color2;
+    background-color: $bgcolor;
+  }
+
+  .log-body {
+    color: $color2;
+    background-color: $bgcolor;
+  }
+
+
+  .log-body .duration, .log-body .fold .fold-name {
+    color: $color2;
+    background-color: $bgcolor;
+  }
+
+
+  .log-body pre {
+    color: $color;
+  }
+
+
+  .top {
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 15px $shadow;
+  }
+
+  .owner-header img,
+  .top,
+  .search--sidebar .search-inner input:focus {
+    background-color: $bgcolor3;
+  }
+
+  .main,
+  #left,
+  .option-dropdown {
+    background-image: linear-gradient(45deg, $greyfill 25%, transparent 25%, transparent 75%, $greyfill 75%, $greyfill), linear-gradient(135deg, $greyfill 25%, transparent 25%, transparent 75%, $greyfill 75%, $greyfill);
+    background-color: $bgcolor2;
+    background-size: 4px 4px;
+  }
+
+  #left {
+    border-right-color: $greyfill2;
+    box-shadow: 0 0 15px $shadow;
+  }
+
+  button,
+  .action-button--cancel, .action-button--debug, .action-button--restart,
+  .download-log-button, .remove-log-button, .toggle-log-button--dark,
+  .search--sidebar .search-inner input,
+  .option-display {
+    background-color: $bgcolor3;
+    color: $grey9;
+    border-color: $shadow;
+  }
+
+  .travistab-nav--secondary a,
+  .travistab-nav.travistab-nav--underline,
+  .sidebar-list ul,
+  .repo-navigation {
+    border-bottom-color: $grey6;
+  }
+
+  .sidebar-list ul {
+    background-color: $greyfill2;
+  }
+
+  .build-header,
+  .sidebar-seperator,
+  .row-li {
+    border-color: $bgcolor3;
+  }
+
+  #log {
+    border: 2px solid $grey4;
+    border-top-width: 0;
+  }
+
+  .tile.booting, .tile.created, .tile.queued, .tile.received, .tile.started {
+    background: linear-gradient(to right, $started 0, $started 8px, $bgcolor3 8px, $bgcolor3 100%) no-repeat;
+  }
+
+  .tile.passed {
+    background: linear-gradient(to right, $passed 0, $passed 8px, $bgcolor3 8px, $bgcolor3 100%) no-repeat;
+  }
+
+  .tile.errored, .tile.failed {
+    background: linear-gradient(to right, $failed 0, $failed 8px, $bgcolor3 8px, $bgcolor3 100%) no-repeat;
+  }
+
+  .build-header.booting, .build-header.created, .build-header.queued, .build-header.received, .build-header.started {
+    background: linear-gradient(to right, $started 0, $started 10px, $bgcolor3 10px, $bgcolor3 100%) no-repeat;
+  }
+
+  .build-header.passed {
+    background: linear-gradient(to right, $passed 0, $passed 10px, $bgcolor3 10px, $bgcolor3 100%) no-repeat;
+  }
+
+  .build-header.errored, .build-header.failed {
+    background: linear-gradient(to right, $failed 0, $failed 10px, $bgcolor3 10px, $bgcolor3 100%) no-repeat;
+  }
+
+  .row-li.booting, .row-li.created, .row-li.queued, .row-li.received, .row-li.started {
+    background: linear-gradient(to right, $started 0, $started 10px, $bgcolor3 10px, $bgcolor3 100%) no-repeat;
+  }
+
+  .row-li.passed {
+    background: linear-gradient(to right, $passed 0, $passed 10px, $bgcolor3 10px, $bgcolor3 100%) no-repeat;
+  }
+
+  .row-li.canceled {
+    background: linear-gradient(to right, $greyd 0, $greyd 10px, $bgcolor3 10px, $bgcolor3 100%) no-repeat;
+  }
+
+  .row-li.errored, .row-li.failed {
+    background: linear-gradient(to right, $failed 0, $failed 10px, $bgcolor3 10px, $bgcolor3 100%) no-repeat;
+  }
+
+  .build-commit:after {
+    background: linear-gradient(-90deg, $bgcolor3 20%, rgba(50, 50, 50, 0) 100%);
+  }
+
+  @media screen and (min-width: 50.063em) {
+    .commit-description:after {
+      background: linear-gradient(360deg, $bgcolor3 5%, rgba(50, 50, 50, 0) 100%);
+    }
+
+    .tile h2:after,
+    .pr-row .row-branch:after {
+      background: linear-gradient(-90deg, $bgcolor3 0, rgba(50, 50, 50, 0) 100%);
+    }
+
+    .fade-out:after {
+      background: linear-gradient(-90deg, $bgcolor3 30%, rgba(50, 50, 50, 0) 100%);
+    }
+
+    .pr-row .two-line:first-of-type {
+      border-color: $bgcolor3;
+    }
+
+    .branch-row .row-last-build:before {
+      background-color: $bgcolor3;
+    }
+
+    .option-tofu {
+      border-color: $bgcolor2;
+    }
+  }
+}

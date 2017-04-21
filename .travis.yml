@@ -1,0 +1,7 @@
+language: ruby
+rvm:
+- 'ruby-2.2'
+before_script:
+- gem install sass
+script:
+- sass -c schwarzenslacker.scss
