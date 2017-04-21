@@ -26,7 +26,7 @@ $grey4: #414;
 $greyfill: #1e001e;
 $greyfill2: #1a001a;
 
-@-moz-document domain("travis-ci.org") {
+@-moz-document domain("travis-ci.org"), domain("travis-ci.com") {
   a, body, button, html,
   .topbar, .topbar a,
   .repo-header .repo-title a {
