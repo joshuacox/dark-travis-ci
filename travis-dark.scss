@@ -66,6 +66,16 @@ $greyfill2: #1a001a;
     background-color: $bgcolor;
   }
 
+  .navigation-nested {
+    color: $color2;
+    background-color: $bgcolor;
+  }
+
+  .navigation-nested a:hover {
+    color: $linkcolor;
+    background-color: $bgcolor2;
+  }
+
 
   .log-body pre {
     color: $color;
