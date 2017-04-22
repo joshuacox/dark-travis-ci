@@ -39,7 +39,7 @@ $greyfill2: #1a001a;
     border: 10px solid $bordercolor;
   }
 
-  .no-button, .small-title-popup-title, .url, .ember-text-area, .ember-view, #status-images, .display {
+  #owner, .ember-application, .footer-title, .footer-elem, .travis-footer, .footer, .no-button, .small-title-popup-title, .url, .ember-text-area, .ember-view, #status-images, .display {
     color: $color;
     background-color: $bgcolor;
   }
