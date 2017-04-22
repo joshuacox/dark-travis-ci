@@ -5,3 +5,4 @@ before_script:
 - gem install sass
 script:
 - sass -c travis-dark.scss
+- make test
