@@ -39,17 +39,27 @@ $greyfill2: #1a001a;
     border: 10px solid $bordercolor;
   }
 
-  #owner, .ember-application, .footer-title, .footer-elem, .travis-footer, .footer, .no-button, .small-title-popup-title, .url, .ember-text-area, .ember-view, #status-images, .display {
+  #owner,
+  .travis-footer,
+  .footer, .footer-title, .footer-elem,
+  .small-title-popup-title,
+  .url, .no-button,
+  .ember-application, .ember-text-area, .ember-view,
+  #status-images,
+  .display {
     color: $color;
     background-color: $bgcolor;
   }
 
-  .form-pair, .text-area, .select, .x-select {
+  .form-pair, .text-area,
+  .select, .x-select {
     color: $color;
     background-color: $bgcolor2;
   }
 
-  #main, .main, .loading-page, .wrapper, .wrappermain {
+  #main,
+  .main, .loading-page,
+  .wrapper, .wrappermain {
     background-color: $bgcolor;
   }
 
@@ -82,7 +92,6 @@ $greyfill2: #1a001a;
     color: $color2;
     background-color: $bgcolor;
   }
-
 
   .log-body .duration, .log-body .fold .fold-name {
     color: $color2;
