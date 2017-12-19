@@ -33,6 +33,14 @@ $greyfill2: #1a001a;
     color: $color;
   }
 
+  .dashboard .centered, .dashboard .loading-page {
+    background-color: $bgcolor;
+  }
+  .job-lang:hover {
+    background-color: $bgcolor2;
+    border-bottom: 1px solid #EFF0EC;
+  }
+
   .popup {
     color: $color;
     background-color: $bgcolor;
